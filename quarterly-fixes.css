@@ -1,0 +1,17 @@
+/* Final quarterly hub corrections — keep this loaded after premium.css */
+:root{--studio-bg:#08090b;--studio-bg-2:#0d0f13;--studio-ink:#f7f4ec;--studio-muted:#c6c0b2;--studio-gold:#f0c75e;--studio-line:rgba(240,199,94,.18)}
+html,body{background:#08090b!important;color:#f7f4ec!important}
+.header{background:rgba(8,9,11,.88)!important;color:#f7f4ec!important;border-bottom:1px solid rgba(240,199,94,.22)!important}
+.brand-name{color:#f7f4ec!important}.brand-sub{color:#f0c75e!important}
+.tabs{flex:1 1 auto!important;min-width:0!important}
+.tab-btn{background:transparent!important;color:#c6c0b2!important;border:0!important;border-bottom:2px solid transparent!important;min-width:0!important;white-space:normal!important}
+.tab-btn:hover{background:rgba(240,199,94,.08)!important;color:#fff!important}
+.tab-btn.active{background:rgba(240,199,94,.12)!important;color:#fff!important;border-bottom-color:#f0c75e!important}
+.tab-name{color:inherit!important}.tab-date{color:#f0c75e!important}
+.content,.loading{background:#08090b!important}.loading-msg{color:#c6c0b2!important}
+.panel iframe{background:#08090b!important;display:block!important;width:100%!important;border:0!important}
+.external-link{background:rgba(240,199,94,.1)!important;color:#f7f4ec!important;border:1px solid rgba(240,199,94,.25)!important}
+.external-link:hover{background:rgba(240,199,94,.18)!important;color:#fff!important}
+.footer{background:#07080a!important;color:rgba(247,244,236,.62)!important;border-top:1px solid rgba(240,199,94,.22)!important}
+@media (min-width:901px){.header{padding-left:18px!important;padding-right:18px!important}.header-top{max-width:1460px!important;gap:8px!important}.tab-btn{padding-left:8px!important;padding-right:8px!important;gap:5px!important}.tab-icon{font-size:17px!important}.tab-name{font-size:12.25px!important;line-height:1.05!important;letter-spacing:0!important}.tab-date{font-size:8.75px!important;letter-spacing:.035em!important}.external-link{width:34px!important;padding-inline:6px!important}.external-link span:last-child{display:none!important}}
+@media (max-width:720px){.tab-date{display:none!important}.tab-name{font-size:12px!important}.tab-btn{padding-inline:8px!important}}

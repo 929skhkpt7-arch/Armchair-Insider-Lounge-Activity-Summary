@@ -1,0 +1,23 @@
+Upload every file and folder in this directory to the MAIN / ROOT of your GitHub repository.
+
+Required site files:
+- index.html
+- MonthlyQuarterlyTrends.html
+- BuySummary.html
+- SellSummary.html
+- CommunityPortfolio.html
+- ArmchairInsiderPortfolio.html
+- premium.css
+- premium.js
+- quarterly-fixes.css
+- assets/beehiiv-logo.png
+- assets/full-review-thumbnail.jpg
+- vendor/gsap.min.js
+- vendor/ScrollTrigger.min.js
+
+Optional PDF files if you want the View PDF buttons to work:
+- Armchair-Insider-Weekly-Buy-Summary-August-24-30-2026.pdf
+- Armchair-Insider-Weekly-Sell-Summary-August-17-30-2026.pdf
+- COMMUNITY PORTFOLIO SUMMARY - TOP 100 PORTFOLIO (June-August).pdf
+
+Keep the filenames exactly the same, including spaces and punctuation.
