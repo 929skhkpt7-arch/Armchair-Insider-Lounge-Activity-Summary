@@ -16,11 +16,212 @@ th[data-k].sorted-desc::after{content:"↓";opacity:1;color:#fff}
 th[data-k].sorted-asc::after{content:"↑";opacity:1;color:#fff}
 th[data-k].sorted-asc,th[data-k].sorted-desc{color:#fff;background:rgba(201,168,76,.16)}
 </style>
+
+<link rel="stylesheet" href="premium.css?v=11">
+<style>
+body.trends-page{
+  font-family:'DM Sans',Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  background:
+    radial-gradient(circle at 12% 5%,rgba(240,199,94,.10),transparent 29rem),
+    radial-gradient(circle at 88% 12%,rgba(240,199,94,.09),transparent 34rem),
+    #08090b!important;
+  color:#f7f4ec!important;
+}
+.trends-page .hero{
+  min-height:min(560px,68vh)!important;
+  padding:74px 24px 66px!important;
+  background:
+    radial-gradient(circle at 20% 30%,rgba(185,128,50,.18),transparent 28rem),
+    radial-gradient(circle at 82% 55%,rgba(240,199,94,.13),transparent 31rem),
+    linear-gradient(145deg,#090a0d,#12151c 58%,#0b0c0f)!important;
+}
+.trends-page .eyebrow{
+  color:#f0c75e!important;
+  background:rgba(240,199,94,.075)!important;
+  border:1px solid rgba(240,199,94,.26)!important;
+  box-shadow:0 0 26px rgba(240,199,94,.08)!important;
+}
+.trends-page .hero h1{
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-size:clamp(3.1rem,7.2vw,7rem)!important;
+  line-height:.92!important;
+  letter-spacing:-.065em!important;
+  text-shadow:0 22px 70px rgba(0,0,0,.5)!important;
+}
+.trends-page .hero h1 em{
+  color:#f0c75e!important;
+  -webkit-text-fill-color:#f0c75e!important;
+}
+.trends-page .hero-date{color:#bcc1ca!important;}
+.trends-page .hero-desc{
+  max-width:820px!important;
+  color:rgba(247,244,236,.72)!important;
+  font-size:clamp(1rem,1.35vw,1.2rem)!important;
+}
+.trends-page .trends-table-section{
+  padding:76px 0 82px!important;
+  background:
+    radial-gradient(circle at 12% 0%,rgba(240,199,94,.12),transparent 30rem),
+    linear-gradient(145deg,#0b0c0f,#12151c)!important;
+  border-top:1px solid rgba(240,199,94,.18)!important;
+  border-bottom:1px solid rgba(240,199,94,.18)!important;
+}
+.trends-page .trends-table-section .sec-eye{
+  color:#f0c75e!important;
+  font-family:'DM Mono',monospace!important;
+  font-size:12px!important;
+  letter-spacing:.18em!important;
+}
+.trends-page .trends-table-section .sec-eye::before{
+  content:"◆";
+  margin-right:10px;
+  color:#e8c766;
+}
+.trends-page .trends-table-section .sec-title{
+  color:#fff8ea!important;
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-size:clamp(42px,5vw,70px)!important;
+  line-height:.96!important;
+  letter-spacing:-.05em!important;
+  margin:8px 0 14px!important;
+  text-shadow:0 12px 42px rgba(0,0,0,.36)!important;
+}
+.trends-page .trends-table-section .sec-sub{
+  max-width:780px;
+  color:rgba(247,244,236,.72)!important;
+  font-size:17px!important;
+  line-height:1.65!important;
+  margin-bottom:26px!important;
+}
+.trends-page .trends-table-section .rule{
+  width:82px!important;
+  height:4px!important;
+  margin-bottom:26px!important;
+  background:linear-gradient(90deg,#e7c45a,#b98c2b)!important;
+  box-shadow:0 0 24px rgba(232,199,102,.28)!important;
+}
+.trends-page .table-tools{
+  display:flex!important;
+  justify-content:flex-end!important;
+  margin-bottom:14px!important;
+  padding:0!important;
+  background:transparent!important;
+}
+.trends-page .dl-btn{
+  position:relative!important;
+  overflow:hidden!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:8px!important;
+  padding:11px 18px!important;
+  border-radius:999px!important;
+  border:1px solid #f0c75e!important;
+  background:#f0c75e!important;
+  color:#08090b!important;
+  font-family:'DM Mono',monospace!important;
+  font-size:12px!important;
+  font-weight:700!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+  box-shadow:0 10px 28px rgba(240,199,94,.16)!important;
+  transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease!important;
+}
+.trends-page .dl-btn:hover{
+  transform:translateY(-3px)!important;
+  box-shadow:0 16px 38px rgba(240,199,94,.27)!important;
+}
+.trends-page .table-wrap{
+  border:1px solid rgba(255,255,255,.10)!important;
+  border-radius:22px!important;
+  background:
+    radial-gradient(480px circle at var(--card-x,50%) var(--card-y,50%),rgba(240,199,94,.11),transparent 48%),
+    linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025))!important;
+  box-shadow:0 28px 80px rgba(0,0,0,.38)!important;
+  backdrop-filter:blur(13px)!important;
+}
+.trends-page table{
+  color:#f7f4ec!important;
+  background:#11141a!important;
+  font-size:15.5px!important;
+  line-height:1.45!important;
+}
+.trends-page thead,
+.trends-page thead tr,
+.trends-page thead th{
+  background:#171a20!important;
+  color:rgba(247,244,236,.84)!important;
+  border-color:rgba(255,255,255,.10)!important;
+}
+.trends-page thead th{
+  padding:16px 14px!important;
+  font-size:12.5px!important;
+  font-weight:800!important;
+  letter-spacing:.075em!important;
+}
+.trends-page th[data-k]::after{color:#f0c75e!important;}
+.trends-page th[data-k].sorted-desc::after,
+.trends-page th[data-k].sorted-asc::after{color:#fff!important;}
+.trends-page th[data-k].sorted-asc,
+.trends-page th[data-k].sorted-desc{
+  color:#fff!important;
+  background:rgba(240,199,94,.13)!important;
+}
+.trends-page tbody tr{transition:background .25s ease,transform .25s ease!important;}
+.trends-page tbody td{
+  padding:15px 14px!important;
+  border-bottom:1px solid rgba(255,255,255,.09)!important;
+  background:transparent!important;
+  color:rgba(247,244,236,.9)!important;
+  font-weight:600!important;
+}
+.trends-page tbody tr:hover td{
+  background:rgba(240,199,94,.065)!important;
+}
+.trends-page tbody tr:hover{transform:translateX(4px)!important;}
+.trends-page .ticker{
+  color:#fff8e7!important;
+  background:#08090b!important;
+  border:1px solid rgba(240,199,94,.35)!important;
+  box-shadow:0 0 18px rgba(240,199,94,.08)!important;
+  font-size:14.5px!important;
+  font-weight:800!important;
+}
+.trends-page .pill{
+  color:#d1d5dc!important;
+  background:rgba(255,255,255,.055)!important;
+  border:1px solid rgba(255,255,255,.11)!important;
+  font-weight:700!important;
+}
+.trends-page .num{
+  color:#f0eadc!important;
+  font-family:'DM Mono',monospace!important;
+  font-weight:700!important;
+}
+.trends-page .signal-buy{color:#63d99c!important;font-weight:800!important;}
+.trends-page .signal-sell{color:#ff6e6e!important;font-weight:800!important;}
+.trends-page .signal-rot{color:#e49a3a!important;font-weight:800!important;}
+.trends-page footer{
+  color:rgba(247,244,236,.55)!important;
+  background:#07080a!important;
+  border-top:1px solid rgba(255,255,255,.10)!important;
+}
+@media(max-width:700px){
+  .trends-page .hero{min-height:520px!important;padding:52px 18px!important;}
+  .trends-page .trends-table-section{padding:54px 0!important;}
+  .trends-page .table-tools{justify-content:flex-start!important;}
+  .trends-page table{font-size:14.5px!important;}
+  .trends-page thead th{font-size:11.5px!important;padding:13px 12px!important;}
+  .trends-page tbody td{padding:13px 12px!important;}
+}
+</style>
 </head>
-<body>
+<body class="trends-page">
 <section class="hero"><div class="eyebrow">📊 Monthly / Quarterly Trends</div><h1>Community <em>Buy & Sell</em><br>Trend Report</h1><div class="hero-date">June 1 – August 30, 2026 · Q2 Tail-End + Q3 Snapshot</div><p class="hero-desc">A focused quarterly view of the top 20 tickers by net community activity.</p></section>
-<section class="section alt"><div class="wrap"><p class="sec-eye">Full Dataset</p><h2 class="sec-title">Sortable Quarterly Summary Table</h2><p class="sec-sub">Top 20 tickers measured by Net, where Net equals Buy mentions minus Sell mentions. Default view is sorted by the largest Net value first.</p><div class="table-tools"><button type="button" onclick="downloadExcel()">⬇ Export Excel</button></div><div class="table-wrap"><table id="summaryTable"><thead><tr><th data-k="ticker">Ticker</th><th data-k="name">Name</th><th data-k="category">Category</th><th data-k="buyMentions" class="num">Buy</th><th data-k="sellMentions" class="num">Sell</th><th data-k="net" class="num">Net</th><th data-k="avgYield" class="num">Avg Yield</th><th data-k="signal">Signal</th></tr></thead><tbody id="tbody"><tr><td><span class="ticker">MLPI</span></td><td>NEOS MLP &amp; Energy Infrastructure High Income ETF</td><td><span class="pill">MLP / Energy</span></td><td class="num">30</td><td class="num">1</td><td class="num">+29</td><td class="num">14.69%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">PFFA</span></td><td>Virtus InfraCap U.S. Preferred Stock ETF</td><td><span class="pill">Preferred</span></td><td class="num">27</td><td class="num">4</td><td class="num">+23</td><td class="num">9.85%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">KGLD</span></td><td>Kurv Gold Enhanced Income ETF</td><td><span class="pill">ETF</span></td><td class="num">21</td><td class="num">3</td><td class="num">+18</td><td class="num">16.81%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">GAB</span></td><td>The Gabelli Equity Trust Inc.</td><td><span class="pill">CEF</span></td><td class="num">15</td><td class="num">0</td><td class="num">+15</td><td class="num">10.66%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">ADAMK</span></td><td>Adamas Trust 9.60% Senior Notes due 2031</td><td><span class="pill">Credit / Bonds</span></td><td class="num">13</td><td class="num">0</td><td class="num">+13</td><td class="num">9.60%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">GPIQ</span></td><td>Goldman Sachs Nasdaq-100 Premium Income ETF</td><td><span class="pill">ETF</span></td><td class="num">13</td><td class="num">0</td><td class="num">+13</td><td class="num">9.71%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">OVL</span></td><td>Overlay Shares Large Cap Equity ETF</td><td><span class="pill">ETF</span></td><td class="num">13</td><td class="num">0</td><td class="num">+13</td><td class="num">7.07%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">IAUI</span></td><td>NEOS Gold High Income ETF</td><td><span class="pill">ETF</span></td><td class="num">15</td><td class="num">3</td><td class="num">+12</td><td class="num">11.90%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">IWMI</span></td><td>NEOS Russell 2000 High Income ETF</td><td><span class="pill">ETF</span></td><td class="num">13</td><td class="num">1</td><td class="num">+12</td><td class="num">14.36%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">UTG</span></td><td>Reaves Utility Income Fund</td><td><span class="pill">CEF</span></td><td class="num">12</td><td class="num">0</td><td class="num">+12</td><td class="num">6.26%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">ADX</span></td><td>Adams Diversified Equity Fund, Inc.</td><td><span class="pill">CEF</span></td><td class="num">11</td><td class="num">0</td><td class="num">+11</td><td class="num">7.64%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">HTD</span></td><td>John Hancock Tax-Advantaged Dividend Income Fund</td><td><span class="pill">CEF</span></td><td class="num">11</td><td class="num">0</td><td class="num">+11</td><td class="num">7.45%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">BTCI</span></td><td>NEOS Bitcoin High Income ETF</td><td><span class="pill">ETF</span></td><td class="num">14</td><td class="num">4</td><td class="num">+10</td><td class="num">26.60%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">PTY</span></td><td>PIMCO Corporate &amp; Income Opportunity Fund</td><td><span class="pill">CEF</span></td><td class="num">11</td><td class="num">1</td><td class="num">+10</td><td class="num">12.09%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">PDI</span></td><td>PIMCO Dynamic Income Fund</td><td><span class="pill">CEF</span></td><td class="num">10</td><td class="num">1</td><td class="num">+9</td><td class="num">16.81%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">RITM</span></td><td>Rithm Capital Corp.</td><td><span class="pill">REIT</span></td><td class="num">9</td><td class="num">0</td><td class="num">+9</td><td class="num">10.14%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">TRIN</span></td><td>Trinity Capital Inc.</td><td><span class="pill">BDC</span></td><td class="num">9</td><td class="num">0</td><td class="num">+9</td><td class="num">11.55%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">KSLV</span></td><td>Kurv Silver Enhanced Income ETF</td><td><span class="pill">ETF</span></td><td class="num">10</td><td class="num">2</td><td class="num">+8</td><td class="num">28.46%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">GPIX</span></td><td>Goldman Sachs S&amp;P 500 Premium Income ETF</td><td><span class="pill">ETF</span></td><td class="num">9</td><td class="num">1</td><td class="num">+8</td><td class="num">8.07%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">CAIE</span></td><td>Calamos Autocallable Income ETF</td><td><span class="pill">ETF</span></td><td class="num">8</td><td class="num">0</td><td class="num">+8</td><td class="num">14.20%</td><td class="signal-buy">Net Buy</td></tr></tbody></table></div></div></section>
+<section class="section alt trends-table-section"><div class="wrap"><p class="sec-eye">Full Dataset</p><h2 class="sec-title">Sortable Quarterly Summary Table</h2><p class="sec-sub">Top 20 tickers measured by Net, where Net equals Buy mentions minus Sell mentions. Default view is sorted by the largest Net value first.</p><div class="table-tools"><button class="dl-btn" type="button" onclick="downloadExcel()">⬇ Export Excel</button></div><div class="table-wrap"><table id="summaryTable"><thead><tr><th data-k="ticker">Ticker</th><th data-k="name">Name</th><th data-k="category">Category</th><th data-k="buyMentions" class="num">Buy</th><th data-k="sellMentions" class="num">Sell</th><th data-k="net" class="num">Net</th><th data-k="avgYield" class="num">Avg Yield</th><th data-k="signal">Signal</th></tr></thead><tbody id="tbody"><tr><td><span class="ticker">MLPI</span></td><td>NEOS MLP &amp; Energy Infrastructure High Income ETF</td><td><span class="pill">MLP / Energy</span></td><td class="num">30</td><td class="num">1</td><td class="num">+29</td><td class="num">14.69%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">PFFA</span></td><td>Virtus InfraCap U.S. Preferred Stock ETF</td><td><span class="pill">Preferred</span></td><td class="num">27</td><td class="num">4</td><td class="num">+23</td><td class="num">9.85%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">KGLD</span></td><td>Kurv Gold Enhanced Income ETF</td><td><span class="pill">ETF</span></td><td class="num">21</td><td class="num">3</td><td class="num">+18</td><td class="num">16.81%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">GAB</span></td><td>The Gabelli Equity Trust Inc.</td><td><span class="pill">CEF</span></td><td class="num">15</td><td class="num">0</td><td class="num">+15</td><td class="num">10.66%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">ADAMK</span></td><td>Adamas Trust 9.60% Senior Notes due 2031</td><td><span class="pill">Credit / Bonds</span></td><td class="num">13</td><td class="num">0</td><td class="num">+13</td><td class="num">9.60%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">GPIQ</span></td><td>Goldman Sachs Nasdaq-100 Premium Income ETF</td><td><span class="pill">ETF</span></td><td class="num">13</td><td class="num">0</td><td class="num">+13</td><td class="num">9.71%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">OVL</span></td><td>Overlay Shares Large Cap Equity ETF</td><td><span class="pill">ETF</span></td><td class="num">13</td><td class="num">0</td><td class="num">+13</td><td class="num">7.07%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">IAUI</span></td><td>NEOS Gold High Income ETF</td><td><span class="pill">ETF</span></td><td class="num">15</td><td class="num">3</td><td class="num">+12</td><td class="num">11.90%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">IWMI</span></td><td>NEOS Russell 2000 High Income ETF</td><td><span class="pill">ETF</span></td><td class="num">13</td><td class="num">1</td><td class="num">+12</td><td class="num">14.36%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">UTG</span></td><td>Reaves Utility Income Fund</td><td><span class="pill">CEF</span></td><td class="num">12</td><td class="num">0</td><td class="num">+12</td><td class="num">6.26%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">ADX</span></td><td>Adams Diversified Equity Fund, Inc.</td><td><span class="pill">CEF</span></td><td class="num">11</td><td class="num">0</td><td class="num">+11</td><td class="num">7.64%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">HTD</span></td><td>John Hancock Tax-Advantaged Dividend Income Fund</td><td><span class="pill">CEF</span></td><td class="num">11</td><td class="num">0</td><td class="num">+11</td><td class="num">7.45%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">BTCI</span></td><td>NEOS Bitcoin High Income ETF</td><td><span class="pill">ETF</span></td><td class="num">14</td><td class="num">4</td><td class="num">+10</td><td class="num">26.60%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">PTY</span></td><td>PIMCO Corporate &amp; Income Opportunity Fund</td><td><span class="pill">CEF</span></td><td class="num">11</td><td class="num">1</td><td class="num">+10</td><td class="num">12.09%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">PDI</span></td><td>PIMCO Dynamic Income Fund</td><td><span class="pill">CEF</span></td><td class="num">10</td><td class="num">1</td><td class="num">+9</td><td class="num">16.81%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">RITM</span></td><td>Rithm Capital Corp.</td><td><span class="pill">REIT</span></td><td class="num">9</td><td class="num">0</td><td class="num">+9</td><td class="num">10.14%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">TRIN</span></td><td>Trinity Capital Inc.</td><td><span class="pill">BDC</span></td><td class="num">9</td><td class="num">0</td><td class="num">+9</td><td class="num">11.55%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">KSLV</span></td><td>Kurv Silver Enhanced Income ETF</td><td><span class="pill">ETF</span></td><td class="num">10</td><td class="num">2</td><td class="num">+8</td><td class="num">28.46%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">GPIX</span></td><td>Goldman Sachs S&amp;P 500 Premium Income ETF</td><td><span class="pill">ETF</span></td><td class="num">9</td><td class="num">1</td><td class="num">+8</td><td class="num">8.07%</td><td class="signal-buy">Net Buy</td></tr><tr><td><span class="ticker">CAIE</span></td><td>Calamos Autocallable Income ETF</td><td><span class="pill">ETF</span></td><td class="num">8</td><td class="num">0</td><td class="num">+8</td><td class="num">14.20%</td><td class="signal-buy">Net Buy</td></tr></tbody></table></div></div></section>
 <footer>Armchair Insider Lounge · Monthly / Quarterly Trends · June 1 – August 30, 2026 · Not investment advice.</footer>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="premium.js?v=11"></script>
 <script>
 var QDATA={"summaryRows":[{"ticker":"MLPI","name":"NEOS MLP & Energy Infrastructure High Income ETF","category":"MLP / Energy","buyMentions":30,"sellMentions":1,"net":29,"buyWeeks":11,"sellWeeks":1,"avgYield":14.69,"signal":"Net Buy"},{"ticker":"PFFA","name":"Virtus InfraCap U.S. Preferred Stock ETF","category":"Preferred","buyMentions":27,"sellMentions":4,"net":23,"buyWeeks":8,"sellWeeks":4,"avgYield":9.85,"signal":"Net Buy"},{"ticker":"KGLD","name":"Kurv Gold Enhanced Income ETF","category":"ETF","buyMentions":21,"sellMentions":3,"net":18,"buyWeeks":8,"sellWeeks":2,"avgYield":16.81,"signal":"Net Buy"},{"ticker":"GAB","name":"The Gabelli Equity Trust Inc.","category":"CEF","buyMentions":15,"sellMentions":0,"net":15,"buyWeeks":5,"sellWeeks":0,"avgYield":10.66,"signal":"Net Buy"},{"ticker":"ADAMK","name":"Adamas Trust 9.60% Senior Notes due 2031","category":"Credit / Bonds","buyMentions":13,"sellMentions":0,"net":13,"buyWeeks":2,"sellWeeks":0,"avgYield":9.6,"signal":"Net Buy"},{"ticker":"GPIQ","name":"Goldman Sachs Nasdaq-100 Premium Income ETF","category":"ETF","buyMentions":13,"sellMentions":0,"net":13,"buyWeeks":8,"sellWeeks":0,"avgYield":9.71,"signal":"Net Buy"},{"ticker":"OVL","name":"Overlay Shares Large Cap Equity ETF","category":"ETF","buyMentions":13,"sellMentions":0,"net":13,"buyWeeks":5,"sellWeeks":0,"avgYield":7.07,"signal":"Net Buy"},{"ticker":"IAUI","name":"NEOS Gold High Income ETF","category":"ETF","buyMentions":15,"sellMentions":3,"net":12,"buyWeeks":5,"sellWeeks":2,"avgYield":11.9,"signal":"Net Buy"},{"ticker":"IWMI","name":"NEOS Russell 2000 High Income ETF","category":"ETF","buyMentions":13,"sellMentions":1,"net":12,"buyWeeks":7,"sellWeeks":1,"avgYield":14.36,"signal":"Net Buy"},{"ticker":"UTG","name":"Reaves Utility Income Fund","category":"CEF","buyMentions":12,"sellMentions":0,"net":12,"buyWeeks":7,"sellWeeks":0,"avgYield":6.26,"signal":"Net Buy"},{"ticker":"ADX","name":"Adams Diversified Equity Fund, Inc.","category":"CEF","buyMentions":11,"sellMentions":0,"net":11,"buyWeeks":6,"sellWeeks":0,"avgYield":7.64,"signal":"Net Buy"},{"ticker":"HTD","name":"John Hancock Tax-Advantaged Dividend Income Fund","category":"CEF","buyMentions":11,"sellMentions":0,"net":11,"buyWeeks":9,"sellWeeks":0,"avgYield":7.45,"signal":"Net Buy"},{"ticker":"BTCI","name":"NEOS Bitcoin High Income ETF","category":"ETF","buyMentions":14,"sellMentions":4,"net":10,"buyWeeks":6,"sellWeeks":3,"avgYield":26.6,"signal":"Net Buy"},{"ticker":"PTY","name":"PIMCO Corporate & Income Opportunity Fund","category":"CEF","buyMentions":11,"sellMentions":1,"net":10,"buyWeeks":8,"sellWeeks":1,"avgYield":12.09,"signal":"Net Buy"},{"ticker":"PDI","name":"PIMCO Dynamic Income Fund","category":"CEF","buyMentions":10,"sellMentions":1,"net":9,"buyWeeks":3,"sellWeeks":1,"avgYield":16.81,"signal":"Net Buy"},{"ticker":"RITM","name":"Rithm Capital Corp.","category":"REIT","buyMentions":9,"sellMentions":0,"net":9,"buyWeeks":7,"sellWeeks":0,"avgYield":10.14,"signal":"Net Buy"},{"ticker":"TRIN","name":"Trinity Capital Inc.","category":"BDC","buyMentions":9,"sellMentions":0,"net":9,"buyWeeks":5,"sellWeeks":0,"avgYield":11.55,"signal":"Net Buy"},{"ticker":"KSLV","name":"Kurv Silver Enhanced Income ETF","category":"ETF","buyMentions":10,"sellMentions":2,"net":8,"buyWeeks":6,"sellWeeks":1,"avgYield":28.46,"signal":"Net Buy"},{"ticker":"GPIX","name":"Goldman Sachs S&P 500 Premium Income ETF","category":"ETF","buyMentions":9,"sellMentions":1,"net":8,"buyWeeks":7,"sellWeeks":1,"avgYield":8.07,"signal":"Net Buy"},{"ticker":"CAIE","name":"Calamos Autocallable Income ETF","category":"ETF","buyMentions":8,"sellMentions":0,"net":8,"buyWeeks":3,"sellWeeks":0,"avgYield":14.2,"signal":"Net Buy"}]};
 var allRows=QDATA.summaryRows.slice();
